@@ -13,8 +13,13 @@ struct NotesSUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            let context = persistenceController.container.viewContext
+            let dateHolder = DateHolder(context)
+            
+            NotesListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(dateHolder)
         }
     }
 }

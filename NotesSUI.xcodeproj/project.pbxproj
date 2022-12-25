@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		06C75BA3295582E300BF3E5D /* NotesSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C75BA2295582E300BF3E5D /* NotesSUIApp.swift */; };
-		06C75BA5295582E300BF3E5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C75BA4295582E300BF3E5D /* ContentView.swift */; };
+		06C75BA5295582E300BF3E5D /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C75BA4295582E300BF3E5D /* NotesListView.swift */; };
 		06C75BA7295582E400BF3E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06C75BA6295582E400BF3E5D /* Assets.xcassets */; };
 		06C75BAA295582E400BF3E5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06C75BA9295582E400BF3E5D /* Preview Assets.xcassets */; };
 		06C75BAC295582E400BF3E5D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C75BAB295582E400BF3E5D /* Persistence.swift */; };
 		06C75BAF295582E400BF3E5D /* NotesSUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06C75BAD295582E400BF3E5D /* NotesSUI.xcdatamodeld */; };
+		06C75BBA2955CFD800BF3E5D /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C75BB92955CFD800BF3E5D /* FloatingButton.swift */; };
+		06C75BBD2955D4CA00BF3E5D /* NotesEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C75BBC2955D4CA00BF3E5D /* NotesEditView.swift */; };
+		06C75BC62956159C00BF3E5D /* DateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C75BC52956159C00BF3E5D /* DateHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06C75B9F295582E300BF3E5D /* NotesSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C75BA2295582E300BF3E5D /* NotesSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesSUIApp.swift; sourceTree = "<group>"; };
-		06C75BA4295582E300BF3E5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06C75BA4295582E300BF3E5D /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
 		06C75BA6295582E400BF3E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06C75BA9295582E400BF3E5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06C75BAB295582E400BF3E5D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		06C75BAE295582E400BF3E5D /* NotesSUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesSUI.xcdatamodel; sourceTree = "<group>"; };
 		06C75BB0295582E400BF3E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06C75BB92955CFD800BF3E5D /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		06C75BBC2955D4CA00BF3E5D /* NotesEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesEditView.swift; sourceTree = "<group>"; };
+		06C75BC52956159C00BF3E5D /* DateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,11 @@
 		06C75BA1295582E300BF3E5D /* NotesSUI */ = {
 			isa = PBXGroup;
 			children = (
+				06C75BBE2955D53E00BF3E5D /* Views */,
 				06C75BA2295582E300BF3E5D /* NotesSUIApp.swift */,
-				06C75BA4295582E300BF3E5D /* ContentView.swift */,
 				06C75BA6295582E400BF3E5D /* Assets.xcassets */,
 				06C75BAB295582E400BF3E5D /* Persistence.swift */,
+				06C75BC52956159C00BF3E5D /* DateHolder.swift */,
 				06C75BB0295582E400BF3E5D /* Info.plist */,
 				06C75BAD295582E400BF3E5D /* NotesSUI.xcdatamodeld */,
 				06C75BA8295582E400BF3E5D /* Preview Content */,
@@ -73,6 +80,16 @@
 				06C75BA9295582E400BF3E5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06C75BBE2955D53E00BF3E5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06C75BB92955CFD800BF3E5D /* FloatingButton.swift */,
+				06C75BA4295582E300BF3E5D /* NotesListView.swift */,
+				06C75BBC2955D4CA00BF3E5D /* NotesEditView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C75BC62956159C00BF3E5D /* DateHolder.swift in Sources */,
+				06C75BBD2955D4CA00BF3E5D /* NotesEditView.swift in Sources */,
 				06C75BAC295582E400BF3E5D /* Persistence.swift in Sources */,
-				06C75BA5295582E300BF3E5D /* ContentView.swift in Sources */,
+				06C75BA5295582E300BF3E5D /* NotesListView.swift in Sources */,
+				06C75BBA2955CFD800BF3E5D /* FloatingButton.swift in Sources */,
 				06C75BA3295582E300BF3E5D /* NotesSUIApp.swift in Sources */,
 				06C75BAF295582E400BF3E5D /* NotesSUI.xcdatamodeld in Sources */,
 			);
